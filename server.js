@@ -14,13 +14,13 @@ var server = app.listen(3000, function(){
 app.use(express.static('public'));
 
 // app.get('/', function(req, res){
-//     res.send('pknu smart factory team')
+//     res.send('pknu smart factory team') 
 // })
 
 app.get('/info', function(req, res){
-    res.send('member')
+    res.send('member');
 })
 
 app.get('/info/member', function(req, res){
-    res.sendFile(__dirname + '/info/member.json')
+    res.sendFile(__dirname + '/info/member.json');
 })
